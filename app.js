@@ -80,11 +80,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray([a,b,c]) {
-  let y = sum(a,b)[0];
-  let z = sum(y,c)[0];
+function sumArray([j,k,l]) {
+  let y = sum(j,k)[0];
+  let z = sum(y,l)[0];
 
-  return [z ,  a + ',' + b + ',' + c + ' was passed in as an array of numbers, and ' + z +  ' is their sum.']
+  return [z ,  j + ',' + k + ',' + l + ' was passed in as an array of numbers, and ' + z +  ' is their sum.']
   
 }
 
@@ -105,12 +105,17 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) {
-  //eslint-disable-line
+let multArr = [2, 3, 4];
+function multiplyArray([q , w , e]) {
+
+  let f = multiply (q,w)[0];
+  let g = multiply (f,e)[0];
+
+  return [g ,'The numbers ' + q + ',' + w + ',' + e + ' have a product of ' + g + '.' ];
 }
 
-// Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+console.log(multiplyArray([2,3,4])); 
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
